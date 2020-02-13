@@ -52,11 +52,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
     function results() {
         var total = allergy_count + cold_count;
-        alert("Results: " + (allergy_count / total) * 100 +
-            "\n" + (cold_count / total) * 100);
+        alert("Allergy Percentage: " + (allergy_count / total) * 100 +
+            "\nCold Percentage: " + (cold_count / total) * 100);
     }
 </script>
 <!-- added a function to calculate the results-->
+<!-- " represents what the text on the output will say-->
 <!-- var total adds the results of the allergy and cold count-->
 <!-- created an alert that displayed the percentages of the results, like 
 using a mathematical formula where / means division and * means multiplication-->
