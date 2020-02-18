@@ -44,16 +44,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         allergy_count = allergy_count + 1;
         alert("Allergy Count: " + allergy_count);
     }
-
- <!-- added alert and function to mark allergy -->
- <!-- alert created to count allergies-->
   
     function coldAdd() {
         cold_count = cold_count + 1;
         alert("Cold Count: " + cold_count);
     }
-<!-- added function to count cold -->
-<!-- alert created to count cold-->
  
     function results() {
         var total = allergy_count + cold_count;
@@ -86,13 +81,13 @@ using a mathematical formula where / means division and * means multiplication--
         background-color: hsl(0, 0%, 100%);
     }
   
- <!-- setting up format of pages-->
+ 
     .page:target {
         left: 0vw;
         z-index: 1;
     }
 </style>
-
+<!-- described format of the page -->
 <body>
     <div id="header" class="w3-container w3-flat-carrot">
         <h1>Cold or Allergies?</h1>
@@ -107,7 +102,7 @@ using a mathematical formula where / means division and * means multiplication--
             product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
 
         <p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
-
+<!-- body of the first page, <p> is the output text of what will be shown on the page-->
         <div class="page" id="one">
             <div id="header" class="w3-container w3-flat-carrot">
                 <h1>Question 1</h1>
@@ -240,6 +235,7 @@ using a mathematical formula where / means division and * means multiplication--
                 <p>Results</p>
                 <a class="w3-btn w3-black" onclick="results();"> View Results </a>
             </div>
+         <!-- this page shows the results by adding a button labeled View Results, and then the onclick button results is the function that calculated the results-->
         </div>
     </div>
     <footer class="w3-bottom w3-container w3-flat-carrot">
