@@ -45,11 +45,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         alert("Allergy Count: " + allergy_count);
     }
 
+ <!-- added alert and function to mark allergy -->
+ <!-- alert created to count allergies-->
+  
     function coldAdd() {
         cold_count = cold_count + 1;
         alert("Cold Count: " + cold_count);
     }
-
+<!-- added function to count cold -->
+<!-- alert created to count cold-->
+ 
     function results() {
         var total = allergy_count + cold_count;
         alert("Allergy Percentage: " + (allergy_count / total) * 100 +
@@ -80,7 +85,8 @@ using a mathematical formula where / means division and * means multiplication--
         z-index: 0;
         background-color: hsl(0, 0%, 100%);
     }
-    
+  
+ <!-- setting up format of pages-->
     .page:target {
         left: 0vw;
         z-index: 1;
