@@ -51,9 +51,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     }
  
     function results() {
-        var total = allergy_count + cold_count;
-        alert("Allergy Percentage: " + (allergy_count / total) * 100 +
-            "\nCold Percentage: " + (cold_count / total) * 100);
+            var resultText = document.getElementById("stressResults");
+            var total = allergy_count + cold_count;
+            var allergypercentage = (allergy_count / total) * 100;
+            var coldpercentage = (cold_count / total) * 100;
+            resultText.innerHTML = "Probability it is stress = " + allergypercentage + "%<br> Probability that it is not stress = " + coldpercentage;
     }
 </script>
 <!-- added a function to calculate the results-->
@@ -64,6 +66,7 @@ using a mathematical formula where / means division and * means multiplication--
 <!-- {} needed to open and close the function-->
 <!-- semicolons are for ending the function-->
 <!-- print allergy and cold count-->
+<!-- updated results to change the alert page to show on the actual webstie page-->
 
 <style>
     .body {
@@ -236,10 +239,11 @@ using a mathematical formula where / means division and * means multiplication--
             <!-- added question by typing in between <p> and </p> -->
             <!-- added the button to coordinate if yes or no pertains to allergy and cold by 
                  by function onclick="coldadd();" or "allergyAdd();"-->
-
-            <div id="content" class="w3-container">
-                <p>Results</p>
-                <a class="w3-btn w3-black" onclick="results();"> View Results </a>
+         
+        <div id="content" class="w3-container">
+                        <p>Results</p>
+                        <a class="w3-btn w3-black" onclick="results();"> View Results </a>
+                        <p id="stressResults"></p>
             </div>
          <!-- this page shows the results by adding a button labeled View Results, and then the onclick button results is the function that calculated the results-->
         </div>
